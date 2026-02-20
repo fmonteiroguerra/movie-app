@@ -1,16 +1,133 @@
-# React + Vite
+# Movie Finder App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web para pesquisar e descobrir filmes utilizando a API do The Movie Database (TMDB). Permite buscar filmes por nome, visualizar os mais populares e consultar detalhes de cada filme em um modal interativo.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Demo
 
-## React Compiler
+(public/preview.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📸 Preview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+(public/preview.png)
+
+---
+
+## ✨ Funcionalidades
+
+- 🔎 Pesquisa de filmes por nome
+- 🔥 Listagem de filmes mais populares
+- ⏳ Debounce na busca para evitar múltiplas requisições
+- 🎬 Modal com detalhes do filme
+- 📱 Layout totalmente responsivo
+- 🎨 Interface moderna com Tailwind CSS
+- ⚡ Integração com API externa (TMDB)
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- React
+- Vite
+- Tailwind CSS
+- Material UI (Modal)
+- react-use (useDebounce)
+- TMDB API
+
+---
+
+## 📦 Instalação e Configuração
+
+### 1️⃣ Clone o repositório
+
+```bash
+git clone https://github.com/fmonteiroguerra/movie-app.git
+cd movie-finder
+```
+
+### 2️⃣ Instale as dependências
+
+```bash
+npm install
+```
+
+### 3️⃣ Configure a API Key
+
+Crie um arquivo `.env` na raiz do projeto:
+
+```env
+VITE_TMDB_API_KEY=your_api_key_here
+```
+
+### 4️⃣ Execute o projeto
+
+```bash
+npm run dev
+```
+
+A aplicação estará disponível em `http://localhost:5173`
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
+src/
+ ├── components/
+ │    ├── MovieCard.jsx
+ │    ├── ModalMovieDetail.jsx
+ │    ├── Search.jsx
+ │    └── Spinner.jsx
+ │
+ ├── App.jsx
+ ├── App.css
+ └── main.jsx
+```
+
+---
+
+## 🧠 Conceitos Aplicados
+
+- Consumo de API com `fetch`
+- Tratamento de erros
+- Debounce para otimização de performance
+- Componentização no React
+- Responsividade com Tailwind CSS
+- Gerenciamento de estado com hooks (`useState`, `useEffect`)
+- Modal controlado com estado local
+
+---
+
+## 📈 Melhorias Futuras
+
+- Paginação
+- Filtro por categoria
+- Ordenação por avaliação
+- Página dedicada para detalhes do filme
+- Sistema de favoritos
+- Dark/Light mode
+- Animações no modal
+
+---
+
+## 🔐 Variáveis de Ambiente
+
+| Nome | Descrição |
+|------|------------|
+| VITE_TMDB_API_KEY | Token de autenticação da API |
+
+---
+
+## 📄 Licença
+
+Este projeto é apenas para fins educacionais.
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Felipe Monteiro Guerra**
+
