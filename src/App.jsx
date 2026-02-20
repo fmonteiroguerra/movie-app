@@ -91,7 +91,7 @@ function App() {
           ) : (
             <ul>
               {movieList.map((movie) => (
-                <MovieCard movie={movie} />
+                <MovieCard key={movie.id} movie={movie} />
               ))}
             </ul>
           )}
