@@ -6,7 +6,7 @@ Aplicação web para pesquisar e descobrir filmes utilizando a API do The Movie 
 
 ## 🚀 Demo
 
-(public/preview.png)
+[(https://movie-app-58qu.onrender.com/)](https://movie-app-58qu.onrender.com/)
 
 ---
 
